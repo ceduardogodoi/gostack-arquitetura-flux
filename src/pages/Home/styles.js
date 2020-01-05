@@ -20,14 +20,14 @@ const ProductList = styled.ul`
     }
 
     > strong {
-      margin-top: 16px;
+      margin-top: 12px;
       line-height: 20px;
       color: #333;
       margin-top: 5px;
     }
 
     > span {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: bold;
       margin: 5px 0 20px;
     }
