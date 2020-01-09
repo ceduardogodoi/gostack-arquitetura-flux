@@ -85,7 +85,7 @@ Cart.propTypes = {
       amount: PropTypes.number,
     })
   ),
-  dispatch: PropTypes.func,
+  removeFromCart: PropTypes.func,
 };
 
 const mapStateToProps = state => ({
