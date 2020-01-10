@@ -12,4 +12,12 @@ function removeFromCart(id) {
   };
 }
 
-export { addToCart, removeFromCart };
+function updateAmount(id, amount) {
+  return {
+    type: '@cart/UPDATE_AMOUNT',
+    id,
+    amount,
+  };
+}
+
+export { addToCart, removeFromCart, updateAmount };
