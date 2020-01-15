@@ -94,7 +94,7 @@ Cart.propTypes = {
       amount: PropTypes.number,
     })
   ),
-  total: PropTypes.number,
+  total: PropTypes.string,
   removeFromCart: PropTypes.func,
   updateAmount: PropTypes.func,
 };
