@@ -19,12 +19,26 @@ function removeFromCart(id) {
   };
 }
 
-function updateAmount(id, amount) {
+function updateAmountRequest(id, amount) {
   return {
-    type: '@cart/UPDATE_AMOUNT',
+    type: '@cart/UPDATE_AMOUNT_REQUEST',
     id,
     amount,
   };
 }
 
-export { addToCartRequest, addToCartSuccess, removeFromCart, updateAmount };
+function updateAmountSuccess(id, amount) {
+  return {
+    type: '@cart/UPDATE_AMOUNT_SUCCESS',
+    id,
+    amount,
+  };
+}
+
+export {
+  addToCartRequest,
+  addToCartSuccess,
+  removeFromCart,
+  updateAmountRequest,
+  updateAmountSuccess,
+};

@@ -12,13 +12,13 @@ import { formatPrice } from '../../util/format';
 
 import { Container, ProductTable, Total } from './styles';
 
-function Cart({ cart, total, removeFromCart, updateAmount }) {
+function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
   function increment(product) {
-    updateAmount(product.id, product.amount + 1);
+    updateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product) {
-    updateAmount(product.id, product.amount - 1);
+    updateAmountRequest(product.id, product.amount - 1);
   }
 
   return (
@@ -96,7 +96,7 @@ Cart.propTypes = {
   ),
   total: PropTypes.string,
   removeFromCart: PropTypes.func,
-  updateAmount: PropTypes.func,
+  updateAmountRequest: PropTypes.func,
 };
 
 const mapStateToProps = state => ({
